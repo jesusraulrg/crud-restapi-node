@@ -1,4 +1,6 @@
 //Controlador para buscar un solo artículo a través del id
+const Articulo = require("../models/modelo_articulo"); // importar el modelo de articulo
+
 const uno = (req, res) => {
     // Recoger un id por la url
     let id = req.params.id;

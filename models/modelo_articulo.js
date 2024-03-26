@@ -3,11 +3,11 @@ const {Schema, model} = require('mongoose');
 const ArticleSchema = Schema({
     titulo: {
         type: String,
-        require: true
+        required: true
     },
     contenido: {
         type: String,
-        require: true
+        required: true
     },
     fecha: {
         type: Date,
@@ -20,4 +20,4 @@ const ArticleSchema = Schema({
 
 });
 
-module.exports = model("articulo", ArticleSchema, "articulos");
+module.exports = model("Articulo", ArticleSchema);

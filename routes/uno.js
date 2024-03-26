@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controllers/uno");
 
-// ruta crear
-router.get("/uno", createController.uno);
+// ruta uno
+router.get("/uno/:id", createController.uno);
 
 module.exports = router;

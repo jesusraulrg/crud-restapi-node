@@ -1,4 +1,7 @@
 // Este es el controlador para eliminar documentos de la base de datos
+const Articulo = require("../models/modelo_articulo"); // importar el modelo de articulo
+
+
 const borrar = (req, res) => {
     const id = req.params.id;
     Articulo.findOneAndDelete({ _id: id }) // Usamos _id como filtro
