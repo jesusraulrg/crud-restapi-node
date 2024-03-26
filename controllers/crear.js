@@ -40,10 +40,10 @@ const crear = (req, res) => {
                 status: 'error',
                 message: "No se ha guardado el articulo" + error.message,
             });
-        })
-}
+        })        
+};
 
 
 module.exports = {
-    crear
+    crear,
 };

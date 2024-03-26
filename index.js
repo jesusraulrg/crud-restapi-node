@@ -36,6 +36,15 @@ app.use("/api", ruta_prueba);
 const ruta_crear = require("./routes/crear");
 app.use("/api", ruta_crear);
 
+const ruta_uno = require("./routes/uno");
+app.use("/api", ruta_uno);
+
+const ruta_borrar = require("./routes/borrar");
+app.use("/api", ruta_borrar);
+
+const ruta_listar = require("./routes/listar");
+app.use("/api", ruta_listar);
+
 
 // escuchar las peticiones HTTP
 app.listen(port, () => {
